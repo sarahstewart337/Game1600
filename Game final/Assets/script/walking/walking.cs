@@ -19,7 +19,7 @@ public class walking : MonoBehaviour
 			position.x++;
 			this.transform.position = position;
 		}
-		if (Input.GetKeyDown(KeyCode.UpArrow))
+		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			Vector3 position = this.transform.position;
 			position.y++;
