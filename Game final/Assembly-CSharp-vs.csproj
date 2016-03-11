@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\script\respawn\respawn.cs" />
      <Compile Include="Assets\script\walking\walking.cs" />
      <Compile Include="Assets\script\walking\walking2.cs" />
  <Reference Include="UnityEngine.UI">
