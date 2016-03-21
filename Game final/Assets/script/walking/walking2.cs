@@ -4,7 +4,7 @@ using System.Collections;
 public class walking2 : MonoBehaviour 
 
 	{
-		public float speed = 1.5f;
+		public float speed = 5f;
 		
 		void Update ()
 		{
@@ -16,7 +16,7 @@ public class walking2 : MonoBehaviour
 			{
 				transform.position += Vector3.right * speed * Time.deltaTime;
 			}
-			if (Input.GetKey(KeyCode.UpArrow))
+			if (Input.GetKey(KeyCode.Space))
 			{
 				transform.position += Vector3.up * speed * Time.deltaTime;
 			}
