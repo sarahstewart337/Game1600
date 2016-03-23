@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\script\damage\Spike.cs" />
+     <Compile Include="Assets\script\walking\direction.cs" />
      <Compile Include="Assets\script\walking\walking.cs" />
      <Compile Include="Assets\script\walking\walking2.cs" />
      <Compile Include="Assets\script\walking\walking3.cs" />
