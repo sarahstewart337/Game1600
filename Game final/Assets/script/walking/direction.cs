@@ -20,7 +20,7 @@ public class direction : MonoBehaviour
 	private bool isGrounded; 
 
 	private bool jump;
-	private float  jumpForce
+	private float  jumpForce;
 
 
 
