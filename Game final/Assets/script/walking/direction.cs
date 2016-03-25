@@ -10,7 +10,7 @@ public class direction : MonoBehaviour
 	private bool facingRight;
 
 	[SerializeField]
-	private Transform[]groundPoints;
+	private Transform[] groundPoints;
 
 	[SerializeField]
 	private float groundRadius;
@@ -20,7 +20,7 @@ public class direction : MonoBehaviour
 	private bool isGrounded; 
 
 	private bool jump;
-	private float  jumpForce
+	private float  jumpForce;
 
 
 
@@ -44,13 +44,20 @@ public class direction : MonoBehaviour
 		flip(horizontal);
 	}
 
+	private void HandleInput()
+	{
+		if (Input.GetKeyDown (KeyCode.Space)) 
+		{
+			jump = true;
+		}
+	}
+
 	private void HandleMovement(float horizontal)
 	{
 		myRigidbody.velocity = new Vector2 (horizontal * movementSpeed, myRigidbody.velocity.y); 
-	}
+	
 
-	if(isGrounded && jump)
-
+	if (isGrounded && jump)
 	{
 		isGrounded = false;
 		myRigidbody.AddForce(new Vector2(0, jumpForce));
@@ -84,7 +91,7 @@ public class direction : MonoBehaviour
 					    {
 						return true;
 
-						{
+						}
 				}
 			}
 		}
