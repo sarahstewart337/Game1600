@@ -1,13 +1,8 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\walking\direction.cs">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets\script\walking\direction.cs" Line="60" Column="25" />
-      <File FileName="Assets\script\walking\walking.cs" Line="1" Column="1" />
-=======
-      <File FileName="Assets\script\walking\direction.cs" Line="81" Column="44" />
->>>>>>> 852de66551b9250f35f5847a07470af1b17988d5
+      <File FileName="Assets\script\walking\direction.cs" Line="33" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
