@@ -1,147 +1,111 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class direction : MonoBehaviour
-{  
+public class direction : MonoBehaviour 
+{
+
 	private Rigidbody2D myRigidbody;
-	private Animator myAnimator;
-	
+
+
+
 	[SerializeField]
-	private float moventSpeed;
-	private bool attack;
-	private bool slide;
+	private float movementSpeed;
+
 	private bool facingRight;
-	
+
 	[SerializeField]
-	private Transform[] GroundPoints;
-	
+	private Transform[] groundPoints;
+
 	[SerializeField]
-	private float groundRadius;
-	
+	private float groundRadious;
+
+	[SerializeField]
 	private LayerMask whatIsGround;
-	
+
 	private bool isGrounded;
+
 	private bool jump;
-	private float JumpForce;
-	
-	
+
+	[SerializeField]
+	private bool airControl;
+
+	[SerializeField]
+	private float jumpForce;
+
 	// Use this for initialization
-	void Start()
+	void Start () 
 	{
 		facingRight = true;
-		myRigidbody = GetComponent <Rigidbody2D>();
+		myRigidbody = GetComponent<Rigidbody2D> ();
 
 	}
-	
-	void Update()
-	{
-		HandleInput();
-	}
-	
+
 	// Update is called once per frame
-	void FixedUpdate()
+	void FixedUpdate () 
 	{
 		float horizontal = Input.GetAxis ("Horizontal");
-		
+
 		isGrounded = IsGrounded();
-		
+
 		HandleMovement (horizontal);
-		
-		Flip(horizontal);
-		
-		Handleattacks();
-		
-		ResetValues();
-		
+
+		HandleInput ();
+
+		Flip (horizontal);
+
+		ResetValues ();
 	}
-	
+
 	private void HandleMovement(float horizontal)
 	{
-		if (!myAnimator.GetBool("slide") && !this.myAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+		if (isGrounded || airControl)
 		{
-			myRigidbody.velocity = new Vector2(horizontal * moventSpeed, myRigidbody.velocity.y);
+			myRigidbody.velocity = new Vector2 (horizontal * movementSpeed, myRigidbody.velocity.y);
 		}
-		
-		if (isGrounded && jump)
-		{
-			isGrounded = false;
-			myRigidbody.AddForce (new Vector2 (0, JumpForce));
-		}
-		
-		if (slide && !this.myAnimator.GetCurrentAnimatorStateInfo (0).IsName ("slide")) {
-			myAnimator.SetBool ("slide", true);
-		}
-		else if (!this.myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Slide"))
-		{
-			myAnimator.SetBool ("slide", false);
-		}
-		
-		
-		myAnimator.SetFloat("speed", Mathf.Abs(horizontal));
+
+
 	}
-	
-	private void Handleattacks()
+
+	private void HandleInput ()
 	{
-		if (attack && !this.myAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
-		{
-			myAnimator.SetTrigger("attack");
-			myRigidbody.velocity = Vector2.zero;
-		}
-	}
-	
-	private void HandleInput()
-	{
-		
-		if (Input.GetKeyDown (KeyCode.Space))
+		if (Input.GetKeyDown (KeyCode.Space)) 
 		{
 			jump = true;
 		}
-		
-		if (Input.GetKeyDown (KeyCode.Mouse0))
+
+		if (isGrounded && jump) 
 		{
-			attack = true;
+			isGrounded = false;
+			myRigidbody.AddForce(new Vector2(0,jumpForce));
 		}
-		if (Input.GetKeyDown (KeyCode.LeftShift))
-		{
-			slide = true;
-			
-		}
-		
 	}
-	
-	
-	
+
 	private void Flip(float horizontal)
 	{
 		if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight)
 		{
 			facingRight = !facingRight;
-			
+
 			Vector3 theScale = transform.localScale;
-			
+
 			theScale.x *= -1;
-			
 			transform.localScale = theScale;
 		}
 	}
-	
+
 	private void ResetValues()
 	{
-		attack = false;
-		slide = false;
+		jump = false;
 	}
-	
-	
-	
+
 	private bool IsGrounded()
-		
 	{
-		
-		if (myRigidbody.velocity.y <= 0)
+		if (myRigidbody.velocity.y <= 0) 
 		{
-			foreach (Transform point in GroundPoints)
+			foreach (Transform point in groundPoints)
 			{
-				BoxCollider[] colliders = Physics2D.OverlapCircleAll(point.position, groundRadius, whatIsGround);
+				Collider2D[] colliders = Physics2D.OverlapCircleAll(point.position, groundRadious, whatIsGround);
+
 				for (int i = 0; i < colliders.Length; i++)
 				{
 					if (colliders[i].gameObject != gameObject)
