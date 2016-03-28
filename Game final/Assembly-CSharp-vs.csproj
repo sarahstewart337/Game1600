@@ -51,6 +51,7 @@
      <Compile Include="Assets\script\walking\walking.cs" />
      <Compile Include="Assets\script\walking\walking2.cs" />
      <Compile Include="Assets\script\walking\walking3.cs" />
+     <Compile Include="Assets\script\walking\walking4.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
