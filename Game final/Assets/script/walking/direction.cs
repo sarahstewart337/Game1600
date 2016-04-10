@@ -3,8 +3,19 @@ using System.Collections;
 
 public class direction : MonoBehaviour 
 {
+	void OnTriggerEnter(Collider other) 
+	{
+		if (other.gameObject.CompareTag ( "Player"))
+		{
+			Debug.Log("Hit");
+			Destroy (gameObject);
+		}
+	}
 
-	private Rigidbody2D myRigidbody;
+
+
+
+	private Rigidbody myRigidbody;
 
 
 
@@ -36,7 +47,7 @@ public class direction : MonoBehaviour
 	void Start () 
 	{
 		facingRight = true;
-		myRigidbody = GetComponent<Rigidbody2D> ();
+		myRigidbody = GetComponent<Rigidbody> ();
 
 	}
 
@@ -45,7 +56,7 @@ public class direction : MonoBehaviour
 	{
 		float horizontal = Input.GetAxis ("Horizontal");
 
-		isGrounded = IsGrounded();
+		//isGrounded = IsGrounded();
 
 		HandleMovement (horizontal);
 
@@ -98,13 +109,13 @@ public class direction : MonoBehaviour
 		jump = false;
 	}
 
-	private bool IsGrounded()
+	/*private bool IsGrounded()
 	{
 		if (myRigidbody.velocity.y <= 0) 
 		{
 			foreach (Transform point in groundPoints)
 			{
-				Collider2D[] colliders = Physics2D.OverlapCircleAll(point.position, groundRadious, whatIsGround);
+				Collider[] colliders = Physics.OverlapBox(point.position,point.rotation, whatIsGround);
 
 				for (int i = 0; i < colliders.Length; i++)
 				{
@@ -116,5 +127,5 @@ public class direction : MonoBehaviour
 			}
 		}
 		return false;
-	}
+	}*/
 }
