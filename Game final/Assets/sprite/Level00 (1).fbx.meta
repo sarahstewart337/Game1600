@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 894d50e6435427c4d80c1d958edea46b
+timeCreated: 1460390535
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Level00
+    100002: //RootNode
+    100004: pCone1
+    100006: pCone10
+    100008: pCone11
+    100010: pCone12
+    100012: pCone13
+    100014: pCone14
+    100016: pCone15
+    100018: pCone16
+    100020: pCone17
+    100022: pCone18
+    100024: pCone19
+    100026: pCone2
+    100028: pCone3
+    100030: pCone4
+    100032: pCone5
+    100034: pCone6
+    100036: pCone8
+    100038: pCone9
+    400000: Level00
+    400002: //RootNode
+    400004: pCone1
+    400006: pCone10
+    400008: pCone11
+    400010: pCone12
+    400012: pCone13
+    400014: pCone14
+    400016: pCone15
+    400018: pCone16
+    400020: pCone17
+    400022: pCone18
+    400024: pCone19
+    400026: pCone2
+    400028: pCone3
+    400030: pCone4
+    400032: pCone5
+    400034: pCone6
+    400036: pCone8
+    400038: pCone9
+    2300000: Level00
+    2300002: pCone1
+    2300004: pCone10
+    2300006: pCone11
+    2300008: pCone12
+    2300010: pCone13
+    2300012: pCone14
+    2300014: pCone15
+    2300016: pCone16
+    2300018: pCone17
+    2300020: pCone18
+    2300022: pCone19
+    2300024: pCone2
+    2300026: pCone3
+    2300028: pCone4
+    2300030: pCone5
+    2300032: pCone6
+    2300034: pCone8
+    2300036: pCone9
+    3300000: Level00
+    3300002: pCone1
+    3300004: pCone10
+    3300006: pCone11
+    3300008: pCone12
+    3300010: pCone13
+    3300012: pCone14
+    3300014: pCone15
+    3300016: pCone16
+    3300018: pCone17
+    3300020: pCone18
+    3300022: pCone19
+    3300024: pCone2
+    3300026: pCone3
+    3300028: pCone4
+    3300030: pCone5
+    3300032: pCone6
+    3300034: pCone8
+    3300036: pCone9
+    4300000: Level00
+    4300002: pCone1
+    4300004: pCone2
+    4300006: pCone3
+    4300008: pCone4
+    4300010: pCone5
+    4300012: pCone6
+    4300014: pCone8
+    4300016: pCone9
+    4300018: pCone10
+    4300020: pCone11
+    4300022: pCone12
+    4300024: pCone13
+    4300026: pCone14
+    4300028: pCone15
+    4300030: pCone16
+    4300032: pCone17
+    4300034: pCone18
+    4300036: pCone19
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
