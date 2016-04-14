@@ -1,10 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\walking\direction.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\ChangeMusic.cs">
     <Files>
-      <File FileName="Assets\script\walking\direction.cs" Line="130" Column="5" />
+      <File FileName="Assets\script\ChangeMusic.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\walking\direction.cs" Line="1" Column="1" />
       <File FileName="Assets\script\PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Destroy.cs" Line="14" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
