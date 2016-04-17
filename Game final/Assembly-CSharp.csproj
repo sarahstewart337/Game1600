@@ -48,9 +48,11 @@
      <Compile Include="Assets\script\ChangeMusic.cs" />
      <Compile Include="Assets\script\DontDestroy.cs" />
      <Compile Include="Assets\script\Load.cs" />
+     <Compile Include="Assets\script\NewBehaviourScript.cs" />
      <Compile Include="Assets\script\PlayerController.cs" />
      <Compile Include="Assets\script\damage\Destroy.cs" />
      <Compile Include="Assets\script\damage\Spike.cs" />
+     <Compile Include="Assets\script\score.cs" />
      <Compile Include="Assets\script\walking\direction.cs" />
      <Compile Include="Assets\script\walking\walking.cs" />
      <Compile Include="Assets\script\walking\walking2.cs" />
