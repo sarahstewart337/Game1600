@@ -10,7 +10,7 @@ public class Spike : MonoBehaviour
 		{
 			Debug.Log("Hit");
 			Destroy (gameObject);
-			GameController.GameOver ();
+			//GameController.GameOver ();
 		}
 	}
 	// Use this for initialization
