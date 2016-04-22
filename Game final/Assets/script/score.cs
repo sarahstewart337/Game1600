@@ -36,7 +36,7 @@ public class score : MonoBehaviour {
 		ScoreText.text = "Score: " + Score.ToString ();
 		if (Score >= 11)
 		{
-			winText.text = "You Win!";
+			Application.LoadLevel(3);
 		}
 	}
 }
